@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="IEEE_Conference_Template/figures/social_banner.png" alt="AeroMind Banner" width="820" height="200"/>
+  <img src="IEEE_Conference_Template/figures/fig_architecture.png" alt="AeroMind Architecture" width="820"/>
 </p>
 
 <h1 align="center">AeroMind — Memory Poisoning Attacks on<br>LLM Multi-Agent UAV Systems</h1>
