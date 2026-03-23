@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="IEEE_Conference_Template/figures/social_banner.png" alt="AeroMind Banner" width="820"/>
+  <img src="IEEE_Conference_Template/figures/fig_architecture.png" alt="AeroMind Architecture" width="820"/>
 </p>
 
 <h1 align="center">AeroMind — Memory Poisoning Attacks on<br>LLM Multi-Agent UAV Systems</h1>
@@ -43,10 +43,6 @@
 **AeroMind** is a hierarchical multi-agent UAV system where one **Supervisor** and two **Scout** drones share five persistent memory layers (Episodic, Semantic, Procedural, Coordination, Working). Agents reason via a Retrieve → Plan → Act loop: the retrieval engine fetches top-*k* entries by cosine similarity, feeds them into the LLM as trusted context, and the LLM translates its plan into physical flight commands executed on PX4 SITL.
 
 We red-team this architecture with **15 attack scenarios** across three research gaps:
-
-<p align="center">
-  <img src="IEEE_Conference_Template/figures/fig_architecture.png" alt="AeroMind System Architecture" width="820"/>
-</p>
 
 | Gap | Research Question | Key Finding |
 |-----|-------------------|-------------|
