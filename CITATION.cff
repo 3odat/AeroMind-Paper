@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "AeroMind: Memory Poisoning Attacks on LLM Multi-Agent UAV Systems"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: Ibrahim
+    family-names: Odat
+    email: ibrahimodat@oakland.edu
+    affiliation: "Oakland University"
+repository-code: "https://github.com/3odat/AeroMind-Paper"
+license: MIT
+keywords:
+  - LLM agents
+  - memory poisoning
+  - multi-agent systems
+  - UAV security
+  - retrieval-augmented generation
+  - adversarial machine learning
+preferred-citation:
+  type: conference-paper
+  title: "Memory as a Control Plane: Poisoning Attacks on LLM Multi-Agent UAV Systems"
+  authors:
+    - given-names: Ibrahim
+      family-names: Odat
+      email: ibrahimodat@oakland.edu
+      affiliation: "Oakland University"
+  year: 2026
+  collection-title: "IEEE Conference Proceedings"

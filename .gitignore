@@ -1,0 +1,44 @@
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Virtual Environments ─────────────────────────
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# ── IDE / Editor ─────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS Files ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Project-Specific ─────────────────────────────
+data/
+logs/
+*.db
+.claude/
+
+# ── LaTeX Build Artifacts ────────────────────────
+IEEE_Conference_Template/*.aux
+IEEE_Conference_Template/*.log
+IEEE_Conference_Template/*.blg
+IEEE_Conference_Template/*.out
+IEEE_Conference_Template/*.synctex.gz
+IEEE_Conference_Template/*.fls
+IEEE_Conference_Template/*.fdb_latexmk
