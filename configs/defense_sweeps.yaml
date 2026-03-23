@@ -1,0 +1,160 @@
+# Defense Parameter Sweep Configurations
+# Paper reference: main.tex Ch. 12 (Defense Evaluation Protocol)
+
+defense_configs:
+  D0:
+    description: "No defense (attack baseline)"
+    defense_enabled: false
+  
+  D1_low:
+    description: "Similarity threshold only — low"
+    defense_enabled: true
+    similarity_threshold: 0.2
+    max_results_per_source: 999
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D1_default:
+    description: "Similarity threshold only — default"
+    defense_enabled: true
+    similarity_threshold: 0.35
+    max_results_per_source: 999
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D1_high:
+    description: "Similarity threshold only — high"
+    defense_enabled: true
+    similarity_threshold: 0.5
+    max_results_per_source: 999
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D1_strict:
+    description: "Similarity threshold only — strict"
+    defense_enabled: true
+    similarity_threshold: 0.7
+    max_results_per_source: 999
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D2_1:
+    description: "Source diversity — max 1 per source"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 1
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D2_2:
+    description: "Source diversity — max 2 per source"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 2
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D2_3:
+    description: "Source diversity — max 3 per source"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 3
+    trust_weight: 0.0
+    provenance_secret: ""
+  
+  D3_low:
+    description: "Trust reranking — low weight"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.1
+    provenance_secret: ""
+  
+  D3_default:
+    description: "Trust reranking — default weight"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.3
+    provenance_secret: ""
+  
+  D3_high:
+    description: "Trust reranking — high weight"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.5
+    provenance_secret: ""
+  
+  D3_dominant:
+    description: "Trust reranking — dominant weight"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.7
+    provenance_secret: ""
+  
+  D4:
+    description: "HMAC provenance only"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.0
+    provenance_secret: "memsec2026"
+  
+  D3_D4:
+    description: "Provenance-informed trust reranking (no threshold, no diversity)"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.3
+    provenance_secret: "memsec2026"
+
+  D3_D4_w01:
+    description: "Provenance + trust rerank w=0.1"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.1
+    provenance_secret: "memsec2026"
+
+  D3_D4_w02:
+    description: "Provenance + trust rerank w=0.2"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.2
+    provenance_secret: "memsec2026"
+
+  D3_D4_w04:
+    description: "Provenance + trust rerank w=0.4"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.4
+    provenance_secret: "memsec2026"
+
+  D3_D4_w05:
+    description: "Provenance + trust rerank w=0.5"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.5
+    provenance_secret: "memsec2026"
+
+  D3_D4_w07:
+    description: "Provenance + trust rerank w=0.7"
+    defense_enabled: true
+    similarity_threshold: 0.0
+    max_results_per_source: 999
+    trust_weight: 0.7
+    provenance_secret: "memsec2026"
+
+  
+  D_all:
+    description: "All defenses combined (best params)"
+    defense_enabled: true
+    similarity_threshold: 0.35
+    max_results_per_source: 2
+    trust_weight: 0.3
+    provenance_secret: "memsec2026"

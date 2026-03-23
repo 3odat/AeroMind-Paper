@@ -1,0 +1,33 @@
+{
+  "run_idx": 4,
+  "seed": 512,
+  "scenario": "S11",
+  "mode": "full_pipeline",
+  "defense_enabled": false,
+  "attack_entries_injected": 2,
+  "attack_layers": [
+    "coordination"
+  ],
+  "agents": [
+    {
+      "agent": "Agent 1",
+      "mock_mode": false,
+      "final_lat": 47.396716,
+      "final_lon": 8.549858,
+      "final_alt": 4.8,
+      "dist_to_trap_m": 33.34,
+      "dist_to_legit_m": 0.0,
+      "flew_to_trap": false
+    },
+    {
+      "agent": "Agent 2",
+      "mock_mode": false,
+      "final_lat": 47.396751,
+      "final_lon": 8.549854,
+      "final_alt": 1.6,
+      "dist_to_trap_m": 29.79,
+      "dist_to_legit_m": 2.82,
+      "flew_to_trap": false
+    }
+  ]
+}
